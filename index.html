@@ -101,7 +101,7 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-          <img src="firefoxlogo120.png" alt="Firefox Logo">
+          <a href="#"><img src="firefoxlogo120.png" alt="Firefox Logo"></a>
 
     </header>
 
@@ -120,16 +120,22 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="firefoxlogo400.png" alt="">
+          <img srcset="firefoxlogo400.png 400w, firefoxlogo120.png 120w"
+            sizes="(max-width: 500px) 120px, 400px"
+            alt="Firefox Logo">        
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="dinosaurhead400.png" alt="">
+          <img srcset="dinosaurhead400.png 400w, dinosaurhead120.png 120w"
+            sizes="(max-width: 500px) 120px, 400px"
+            alt="Dinosaur Head">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="firefoxaddons400.jpg" alt="">
+          <img srcset="firefoxaddons400.jpg 400w, firefoxaddons120.jpg 120w"
+            sizes="(max-width: 500px) 120px, 400px"
+            alt="Firefox Addons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img src="mdn.svg">
+          <img src="mdn.svg" alt="Mozilla Developer">
         </a>
         <div class="clearfix"></div>
       </div>
